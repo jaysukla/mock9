@@ -24,25 +24,3 @@ https://easy-tan-crab-hat.cyclic.app/
 | POST              | /api/posts/:id/comment           | This endpoint should allow users to comment on a specific post identified by its ID.                                    |
 | (Protected Route) | 201                              |
 | GET               | /api/posts/:id                   | This endpoint should return the details of a specific post identified by its ID.                                        | 200         |
-
-# Input for routes testing
-
-/api/register
-
-{
-"name": "John Doe",
-"email": "a@gmail.com",
-"password": "mysecretpassword",
-"dob": "1990-01-01",
-"bio": "Hello, I'm John Doe!",
-"posts": [],
-"friends": [],
-"friendRequests": []
-}
-
-/api/login
-
-{
-"email": "a@gmail.com",
-"password": "mysecretpassword",
-}
