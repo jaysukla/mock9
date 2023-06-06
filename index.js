@@ -226,6 +226,18 @@ res.status(201).send({"data":p})
 
 
 
+app.get("/api/posts/:id",async (req,res)=>{
+let id= req.params.id;
+
+let post = await Post.findById(id);
+
+res.status(200).send({"data":post})
+
+})
+
+
+
+
     app.listen(8080,()=>{
         try {
             
